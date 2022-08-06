@@ -1,6 +1,6 @@
 {
   "name": "@elonehoo/only-random",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate random numbers that are consecutively unique.",
   "license": "MIT",
   "author": "Elone Hoo <huchengyea@163.com>",
