@@ -1,6 +1,21 @@
 {
-  "name": "tiem-mini",
+  "name": "@elonehoo/only-random",
   "version": "0.0.0",
+  "description": "Generate random numbers that are consecutively unique.",
+  "license": "MIT",
+  "author": "Elone Hoo <huchengyea@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/only-random"
+  },
+  "homepage": "https://github.com/elonehoo/only-random#readme",
+  "bugs": "https://github.com/elonehoo/only-random/issues",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rimraf dist && tsup",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public",

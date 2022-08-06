@@ -3,7 +3,7 @@ import onlyRandom from '../src/index'
 
 describe('should', () => {
   it('exported', () => {
-    const random = onlyRandom(1,10)
+    const random = onlyRandom(1, 10)
     let count = 1000
 	  let currentValue
 	  let previousValue
@@ -12,12 +12,11 @@ describe('should', () => {
       currentValue = random
 
       if (
-        currentValue === previousValue ||
-        currentValue > 10 ||
-        currentValue < 1
-      ) {
+        currentValue === previousValue
+        || currentValue > 10
+        || currentValue < 1
+      )
         break
-      }
 
       previousValue = currentValue
     }
