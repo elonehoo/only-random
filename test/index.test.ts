@@ -9,7 +9,7 @@ describe('should', () => {
 	  let previousValue
 
     while (--count > 0) {
-      currentValue = random
+      currentValue = random()
 
       if (
         currentValue === previousValue

@@ -1,33 +1,32 @@
-<div align="center">
-  <img src="./public/logo.svg" wigth='100px' height='100px' />
-</div>
+# only-random
 
-<h1 align='center'>Titem Mini</h1>
+> Generate random numbers that are consecutively unique
 
-## Features
+Useful for things like slideshows where you don't want to have the same slide twice in a row.
 
-- ⚡️ [Vite 3](https://github.com/vitejs/vite), [pnpm](https://github.com/pnpm/pnpm) - born with fastness
+## install
 
-- ✅ Use Vitest for unit and components testing
-
-- 🦾 TypeScript, of course
-
-## Vscode
-
-- [extensions.json](./.vscode/extensions.json)
-
-- [settings.json](./.vscode/settings.json)
-
-## Try it now!
-
-[Create a repo from this template on GitHub](https://github.com/elonehoo/titem-mini/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
-
-```bash
-npx degit elonehoo/titem-mini my-titem-mini-app
-cd my-titem-mini-app
-pnpm install # If you don't have pnpm installed, run: npm install -g pnpm
+```shell
+# npm
+npm install --save @elonehoo/only-random
+# yarn
+yarn add --save @elonehoo/only-random
+# pnpm
+pnpm install --save @elonehoo/only-random
 ```
+
+## usage
+
+```ts
+import onlyRandom from '@elonehoo/only-random'
+
+const random = onlyRandom(1, 10);
+
+console.log(random(), random(), random());
+```
+
+## API
+
+**onlyRandom(minimum:number, maximum:number)**
+
+Returns a function, that when called, will return a random number that is never the same as the previous.

@@ -1,7 +1,6 @@
-export default function onlyRandom(minValue: number, maxvalue: number): number {
+export default function onlyRandom(minValue: number, maxvalue: number): Function {
   let previousValue: number
-  //@ts-ignore
-  return function random():number {
+  return function random() {
     const number = Math.floor((Math.random() * (maxvalue - minValue + 1)) + minValue)
     previousValue = number === previousValue && minValue !== maxvalue ? random() : number
     return previousValue
