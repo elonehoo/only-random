@@ -1,5 +1,6 @@
 {
   "name": "@elonehoo/only-random",
+  "type": "module",
   "version": "0.0.3",
   "description": "Generate random numbers that are consecutively unique.",
   "license": "MIT",
