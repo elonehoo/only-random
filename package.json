@@ -11,13 +11,13 @@
   },
   "homepage": "https://github.com/elonehoo/only-random#readme",
   "bugs": "https://github.com/elonehoo/only-random/issues",
-  "main": "./dist/index.umd.js",
+  "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
   "types": "./dist/type.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.umd.js"
+      "require": "./dist/index.umd.cjs"
     }
   },
   "files": [
