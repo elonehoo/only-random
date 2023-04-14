@@ -20,9 +20,9 @@ pnpm install --save @elonehoo/only-random
 ```ts
 import onlyRandom from '@elonehoo/only-random'
 
-const random = onlyRandom(1, 10);
+const random = onlyRandom(1, 10)
 
-console.log(random(), random(), random());
+console.log(random(), random(), random())
 ```
 
 ## API

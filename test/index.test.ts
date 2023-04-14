@@ -1,5 +1,5 @@
 import { describe, it } from 'vitest'
-import onlyRandom from '../src/index'
+import onlyRandom from '../src'
 
 describe('should', () => {
   it('exported', () => {
@@ -12,9 +12,7 @@ describe('should', () => {
       currentValue = random()
 
       if (
-        currentValue === previousValue
-        || currentValue > 10
-        || currentValue < 1
+        (currentValue === previousValue) || (currentValue > 10) || (currentValue < 1)
       )
         break
 
