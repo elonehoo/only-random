@@ -1,5 +1,7 @@
 # only-random
 
+[![NPM version](https://img.shields.io/npm/v/@elonehoo/only-random?color=a1b858&label=)](https://www.npmjs.com/package/@elonehoo/only-random)
+
 > Generate random numbers that are consecutively unique
 
 Useful for things like slideshows where you don't want to have the same slide twice in a row.
