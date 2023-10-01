@@ -1,4 +1,4 @@
-export default function onlyRandom(minValue: number, maxvalue: number): Function {
+export default function onlyRandom(minValue: number, maxvalue: number): any {
   let previousValue: number
   return function random() {
     const number = Math.floor((Math.random() * (maxvalue - minValue + 1)) + minValue)
